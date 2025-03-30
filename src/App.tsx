@@ -1,4 +1,4 @@
-import SectionMain from './components/SectionMain/sectionMain';
+import SectionMain from '../src/components/SectionMain/SectionMain';
 
 function App() {
     return (
