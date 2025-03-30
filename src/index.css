@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+@import "tailwindcss";
+
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #1F1F1F;
+}
+
+@theme {
+  --animate-toBottom: toBottom 2s linear infinite alternate-reverse;
+
+  @keyframes toBottom {
+
+    0% {
+      transform: translateY(-3rem);
+    }
+
+    100% {
+      transform: translateY(5rem);
+    }
+  }
+
+  --animate-toTop: toTop 2s linear infinite alternate-reverse;
+
+  @keyframes toTop {
+
+    0% {
+      transform: translateY(5rem);
+    }
+
+    100% {
+      transform: translateY(-3rem);
+    }
+  }
+}
