@@ -62,12 +62,12 @@ function SectionMain() {
                         <input
                             type="text"
                             placeholder="Digite um usuário do GitHub"
-                            className="w-full px-4 py-2 rounded-md bg-[#fff] text-[#000] text-base placeholder:text-[#000] placeholder:font-semibold placeholder:text-base"
+                            className="w-full px-4 h-14 rounded-md bg-[#fff] text-[#000] text-base 2xl:text-xl placeholder:text-[#000] placeholder:font-semibold placeholder:text-base 2xl:placeholder:text-xl"
                             onChange={(e) => setUser(e.target.value)}
                             onKeyDown={handleKeyPress}
                         />
                         <button
-                            className="cursor-pointer absolute right-1 top-[50%] -translate-y-[50%] bg-[#005CFF] rounded-md px-1 py-1"
+                            className="cursor-pointer absolute right-0.5 top-[50%] -translate-y-[50%] bg-[#005CFF] rounded-md w-13 h-13 flex justify-center items-center"
                             onClick={userFunction}
                         >
                             <CiSearch className="w-7 h-7 text-[#fff]" />
